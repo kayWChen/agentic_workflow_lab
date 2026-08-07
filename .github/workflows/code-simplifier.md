@@ -4,6 +4,21 @@ description: Analyzes recently modified code and creates pull requests with simp
 on:
   schedule: daily
   skip-if-match: 'is:pr is:open in:title "[code-simplifier]"'
+permissions:
+   actions: read
+   attestations: read
+   checks: read
+   contents: read
+   deployments: read
+   discussions: read
+   id-token: none
+   issues: read
+   packages: read
+   pages: read
+   pull-requests: read
+   security-events: read
+   statuses: read
+   copilot-requests: write
 
 network:
   allowed:
@@ -13,8 +28,6 @@ network:
   - python
   - rust
   - java
-
-permissions: read-all
 
 tracker-id: code-simplifier
 
