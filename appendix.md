@@ -13,6 +13,9 @@ Before installing, ensure you have:
 - **GitHub repository** - A repository where you have write access.
 - **GitHub Actions enabled** - Check in **Settings** → **Actions**.
 - **GitHub CLI (`gh`) v2.0.0+** - [Install GitHub CLI](https://cli.github.com/). Check your version with `gh --version`.
+  - **Windows:** `winget install gh GitHub.cli`
+  - **macOS:** `brew install gh`
+  - **Linux:** see [Linux installation instructions](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
 - **Logged in to GitHub CLI** - Verify with `gh auth status`, and run `gh auth login --scopes repo,workflow` if needed.
 - **Operating system** - Linux, macOS, or Windows with WSL.
 
